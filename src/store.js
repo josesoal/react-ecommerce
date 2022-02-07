@@ -3,12 +3,20 @@ import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 import { productListReducer, productDetailsReducer } from './reducers/productReducers';
+import { cartReducer } from './reducers/cartReducer';
 
 const reducer = combineReducers({
   productList: productListReducer,
   productDetail: productDetailsReducer,
+  cart: cartReducer
 });
-const initialState = {};
+
+const cartItemFromStorage = localStorage.getItem('cartItems') ?
+  JSON.parse(localStorage.getItem('cartItems')) : []
+
+const initialState = {
+  cart: { cartItems: cartItemFromStorage }
+};
 const midleware = [thunk];
 
 const store = createStore( reducer, initialState, 
