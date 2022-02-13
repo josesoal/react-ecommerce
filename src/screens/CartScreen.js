@@ -8,8 +8,8 @@ import { addToCart, removeFromCart } from '../actions/cartActions';
 function CartScreen() {
   const { id, qty=1 } = useParams();
   const navigate = useNavigate();
-
   const dispatch = useDispatch();
+  
   const cart = useSelector( state => state.cart );
   const { cartItems } = cart;
 

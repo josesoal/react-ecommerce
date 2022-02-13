@@ -12,18 +12,22 @@ import { login } from '../actions/userActions';
 function LoginScreen() {
   const [ email, setEmail ] = useState('');
   const [ password, setPassword ] = useState('');
+  
   const [ searchParams ] = useSearchParams();
   const navigate = useNavigate();
   const dispatch = useDispatch();
-
   const redirect = searchParams.get('redirect') || '/';
 
   const userLogin = useSelector( state => state.userLogin );
   const { error, loading, userInfo } = userLogin;
 
   useEffect( () => {
+    /* if user logged in go to (navigate to) to the content of the
+       redirect constant, which is either some other-place or 
+       the HomeScreen ('/')
+    */
     if ( userInfo ) {
-      navigate(redirect);
+      navigate( redirect === '/' ? redirect : '/'+redirect );
     }
   }, [navigate, redirect, userInfo] );
 

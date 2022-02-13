@@ -13,13 +13,17 @@ function Header() {
     dispatch( logout() );
   };
 
+  const style1 = {
+    fontSize: "1.09375rem"
+  }
+
   return (
     <header>
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           
           <LinkContainer to="/">
-            <Navbar.Brand>ProShop</Navbar.Brand>
+            <Navbar.Brand><span style={style1}>ProShop</span></Navbar.Brand>
           </LinkContainer>
           
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -27,7 +31,9 @@ function Header() {
             <Nav className="me-auto">
 
               <LinkContainer to="/cart">
-                <Nav.Link><i className="fas fa-shopping-cart"></i>Cart</Nav.Link>
+                <Nav.Link>
+                  <i className="fas fa-shopping-cart"></i>Cart
+                </Nav.Link>
               </LinkContainer>
 
               {userInfo ? (
