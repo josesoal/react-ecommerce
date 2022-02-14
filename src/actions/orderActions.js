@@ -9,9 +9,9 @@ import {
   ORDER_PAY_REQUEST,
   ORDER_PAY_SUCCESS,
   ORDER_PAY_FAIL,
-  ORDER_LIST_REQUEST,
-  ORDER_LIST_SUCCESS,
-  ORDER_LIST_FAIL,
+  MY_ORDER_LIST_REQUEST,
+  MY_ORDER_LIST_SUCCESS,
+  MY_ORDER_LIST_FAIL,
 } from '../constants/orderConstants'
 
 import { CART_CLEAR_ITEMS } from '../constants/cartConstants'
@@ -90,9 +90,9 @@ export const getOrderDetails = (id) => async (dispatch, getState) => {
   }
 };
 
-export const listMyOrders = (id) => async (dispatch, getState) => {
+export const listMyOrders = () => async (dispatch, getState) => {
   try {
-    dispatch({ type: ORDER_LIST_REQUEST });
+    dispatch({ type: MY_ORDER_LIST_REQUEST });
 
     const { userLogin: { userInfo } } = getState();
 
@@ -109,13 +109,13 @@ export const listMyOrders = (id) => async (dispatch, getState) => {
     );
     
     dispatch({
-      type: ORDER_LIST_SUCCESS,
+      type: MY_ORDER_LIST_SUCCESS,
       payload: data
     });
   }
   catch (error) {
     dispatch({
-      type: ORDER_LIST_FAIL,
+      type: MY_ORDER_LIST_FAIL,
       payload: error.response && error.response.data.detail
         ? error.response.data.detail
         : error.message

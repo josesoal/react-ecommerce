@@ -10,12 +10,15 @@ import {
   userLoginReducer, 
   userRegisterReducer, 
   userDetailsReducer, 
-  userUpdateProfileReducer} from './reducers/userReducers'
+  userUpdateProfileReducer,
+  userListReducer,
+  userDeleteReducer,
+  userUpdateReducer } from './reducers/userReducers'
 import { 
   orderCreateReducer,
   orderDetailsReducer,
   orderPayReducer,
-  orderListReducer } from './reducers/orderReducers'
+  myOrderListReducer } from './reducers/orderReducers'
 
 const reducer = combineReducers({
   productList: productListReducer,
@@ -28,14 +31,17 @@ const reducer = combineReducers({
   orderCreate: orderCreateReducer,
   orderDetails: orderDetailsReducer,
   orderPay: orderPayReducer,
-  orderList: orderListReducer
+  myOrderList: myOrderListReducer,
+  userList: userListReducer,
+  userDelete: userDeleteReducer,
+  userUpdate: userUpdateReducer,
 });
 
 const cartItemFromStorage = localStorage.getItem('cartItems') ?
   JSON.parse( localStorage.getItem('cartItems') ) : []
 
 const shippingAddressFromStorage = localStorage.getItem('shippingAddress') ?
-  JSON.parse( localStorage.getItem('shippingAddress') ) : null
+  JSON.parse( localStorage.getItem('shippingAddress') ) : {}
 
 const paymentMethodFromStorage = localStorage.getItem('paymentMethod') ?
   JSON.parse( localStorage.getItem('paymentMethod') ) : null

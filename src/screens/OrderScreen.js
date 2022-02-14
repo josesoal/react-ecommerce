@@ -1,7 +1,7 @@
 import React, { useEffect, useState }  from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { useNavigate, useParams } from 'react-router-dom'
-import { Button, Row, Col, ListGroup, Image, Card } from 'react-bootstrap'
+import { useParams } from 'react-router-dom'
+import { Row, Col, ListGroup, Image, Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { PayPalButton } from "react-paypal-button-v2"
 
@@ -15,7 +15,6 @@ function OrderScreen() {
   const [sdkReady, setSdkReady] = useState(false)
 
   const { id: orderId } = useParams();
-  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const orderDetails = useSelector( state => state.orderDetails );

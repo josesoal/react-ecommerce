@@ -29,15 +29,15 @@ function ProfileScreen() {
   const userUpdateProfile = useSelector( state => state.userUpdateProfile );
   const { success } = userUpdateProfile;
 
-  const orderList = useSelector( state => state.orderList );
-  const { loading: loadingOrders, error: errorOrders, orders } = orderList;
+  const myOrderList = useSelector( state => state.myOrderList );
+  const { loading: loadingOrders, error: errorOrders, orders } = myOrderList;
 
   useEffect( () => {
     if ( !userInfo ) {
       navigate('/login');
     }
     else {
-      if (!user || !user.name || success) {
+      if (!user || !user.name || success || userInfo._id !== user._id) {
         dispatch( {type: USER_UPDATE_PROFILE_RESET} );
         dispatch( getUserDetails('profile') );
         dispatch( listMyOrders() );
@@ -156,7 +156,8 @@ function ProfileScreen() {
         </Table>
         )}
       </Col>
-    </Row>    
+    </Row>
+
   )
 }
 
