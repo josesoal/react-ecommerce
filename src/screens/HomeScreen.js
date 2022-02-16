@@ -1,22 +1,22 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { Row, Col } from 'react-bootstrap';
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { Row, Col } from 'react-bootstrap'
 
-import Product from '../components/Product';
-import Loader from '../components/Loader';
-import Message from '../components/Message';
-import { listProducts } from '../actions/productActions';
+import Product from '../components/Product'
+import Loader from '../components/Loader'
+import Message from '../components/Message'
+import { listProducts } from '../actions/productActions'
 
 function HomeScreen() {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
   
-  const productList = useSelector( state => state.productList );
-  const { products, loading, error } = productList;
+  const productList = useSelector( state => state.productList )
+  const { products, loading, error } = productList
 
   useEffect( () => {
-    dispatch( listProducts() );
+    dispatch( listProducts() )
 
-  }, [dispatch] );
+  }, [dispatch] )
 
   return (
     <div>

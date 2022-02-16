@@ -1,7 +1,7 @@
 import React, { useState, useEffect }  from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link, useNavigate, useParams } from 'react-router-dom'
-import { Row, Col, Button, Form } from 'react-bootstrap'
+import { useNavigate, useParams } from 'react-router-dom'
+import { Button, Form } from 'react-bootstrap'
 
 import Loader from '../components/Loader'
 import Message from '../components/Message'
@@ -41,7 +41,7 @@ function UserEditScreen() {
         setIsAdmin(user.isAdmin)
       }
     }
-  }, [user, userId, successUpdate, navigate] );
+  }, [user, userId, successUpdate, navigate, dispatch] );
 
   const submitHandler = (e) => {
     e.preventDefault()

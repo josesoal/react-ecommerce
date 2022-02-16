@@ -6,7 +6,7 @@ import { Row, Col, Image, ListGroup, Button, Card, Form } from 'react-bootstrap'
 import Rating from  '../components/Rating'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
-import { productDetails } from '../actions/productActions'
+import { listProductDetails } from '../actions/productActions'
 
 
 function ProductScreen() {
@@ -16,11 +16,11 @@ function ProductScreen() {
   const navigate = useNavigate(); //useHistory replaced by useNavigate 
   const dispatch = useDispatch();
 
-  const productDetail = useSelector( state => state.productDetail );
-  const { product, loading, error } = productDetail;
+  const productDetails = useSelector( state => state.productDetails );
+  const { product, loading, error } = productDetails;
 
   useEffect( () => {
-    dispatch( productDetails( id ) );
+    dispatch( listProductDetails( id ) );
 
   }, [dispatch, id] );
 

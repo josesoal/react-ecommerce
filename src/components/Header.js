@@ -27,7 +27,7 @@ function Header() {
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>
-              <span style={style1}>ProShop</span>
+              <span style={style1}>Ecommerce</span>
             </Navbar.Brand>
           </LinkContainer>
 

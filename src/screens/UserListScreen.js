@@ -7,7 +7,7 @@ import Loader from '../components/Loader'
 import Message from '../components/Message'
 import { listUsers, deleteUser } from '../actions/userActions'
 
-function UserListScreen({ history }) {
+function UserListScreen() {
 
   const dispatch = useDispatch()
   const navigate = useNavigate()
@@ -90,7 +90,7 @@ function UserListScreen({ history }) {
         </Table>
       )}
     </div>
-  );
+  )
 }
 
 export default UserListScreen
