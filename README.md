@@ -8,7 +8,7 @@ This is the source code of Ecommerce Website Frontend implemented in React.
 
 ### 1. Home page (with list of products)
 
-![Home Page](https://drive.google.com/uc?export=view&id=1d77_Lugkv58l_-vnXqbs91WD-P9DQwpC)
+![Home Page](https://github.com/josesoal/my-images/blob/master/ecommerce-website/list-products.png?raw=true)
 
 ### 2. Login and Register
 
