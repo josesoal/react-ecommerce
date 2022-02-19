@@ -5,11 +5,9 @@
 ## Features:
 
 ### 1. Home page (with list of products)
+![Home Page](https://drive.google.com/uc?export=view&id=1d77_Lugkv58l_-vnXqbs91WD-P9DQwpC)
 
-![Home Page](https://drive.google.com/uc?export=view&id=1oTlENlw3MYk6ieM21xoUVDkroPkaqRbw)
-
-### 2. feature
-
+### 2. Login and Register
 ![feature](https://drive.google.com/uc?export=view&id=1oTlENlw3MYk6ieM21xoUVDkroPkaqRb)
 
 ### 3. feature
