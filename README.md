@@ -1,30 +1,30 @@
 # Ecommerce Website (Frontend in React)
 
+This is the source code of Ecommerce Website implemented in React.
+
 >The source code of the **backend** can be seeen at https://github.com/josesoal/django-ecommerce
 
 ## Features:
 
 ### 1. Home page (with list of products)
+
 ![Home Page](https://drive.google.com/uc?export=view&id=1d77_Lugkv58l_-vnXqbs91WD-P9DQwpC)
 
 ### 2. Login and Register
-![feature](https://drive.google.com/uc?export=view&id=1oTlENlw3MYk6ieM21xoUVDkroPkaqRb)
 
-### 3. feature
+![feature](https://drive.google.com/uc?export=view&id=17EWYYswYpR0yg--Eblu5ZCmqEdeQrs7q)
 
-![feature](https://drive.google.com/uc?export=view&id=1oTlENlw3MYk6ieM21xoUVDkroPkaqRb)
+### 3. Shopping Cart and Checkout Process
 
-### 4. feature
+![feature](https://drive.google.com/uc?export=view&id=1vA66ABs91upw84hjQLftuIaXbRn0zYD1)
 
-![feature](https://drive.google.com/uc?export=view&id=1oTlENlw3MYk6ieM21xoUVDkroPkaqRb)
+### 4. User Profile with List of Orders
 
-### 5. feature
+![feature](https://drive.google.com/uc?export=view&id=1qZBANady5cc_pG9TOwcE9L3c8PNSHbVU)
 
-![feature](https://drive.google.com/uc?export=view&id=1oTlENlw3MYk6ieM21xoUVDkroPkaqRb)
+### 5. Admin Panel for User, Products, and Orders
 
-### 6. feature
-
-![feature](https://drive.google.com/uc?export=view&id=1oTlENlw3MYk6ieM21xoUVDkroPkaqRb)
+![feature](https://drive.google.com/uc?export=view&id=1EHznFUPNiO0A2FzVhtugmHLDdD7pIU64)
 
 ---
 
