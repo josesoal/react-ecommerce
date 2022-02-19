@@ -12,19 +12,19 @@ This is the source code of Ecommerce Website Frontend implemented in React.
 
 ### 2. Login and Register
 
-![Login and Register](https://drive.google.com/uc?export=view&id=17EWYYswYpR0yg--Eblu5ZCmqEdeQrs7q)
+![Login and Register](https://github.com/josesoal/my-images/blob/master/ecommerce-website/login.png?raw=true)
 
 ### 3. Shopping Cart and Checkout Process
 
-![ Shopping Cart and Checkout Process](https://drive.google.com/uc?export=view&id=1vA66ABs91upw84hjQLftuIaXbRn0zYD1)
+![ Shopping Cart and Checkout Process](https://github.com/josesoal/my-images/blob/master/ecommerce-website/shopping-cart.png?raw=true)
 
 ### 4. User Profile with List of Orders
 
-![User Profile](https://drive.google.com/uc?export=view&id=1qZBANady5cc_pG9TOwcE9L3c8PNSHbVU)
+![User Profile](https://github.com/josesoal/my-images/blob/master/ecommerce-website/profile.png?raw=true)
 
 ### 5. Admin Panel for User, Products, and Orders
 
-![Admin Panel](https://drive.google.com/uc?export=view&id=1EHznFUPNiO0A2FzVhtugmHLDdD7pIU64)
+![Admin Panel](https://github.com/josesoal/my-images/blob/master/ecommerce-website/admin-panel.png?raw=true)
 
 ---
 
